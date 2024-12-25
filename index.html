@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/1d618870d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+    <nav>
+       
+        <img src="" class="logo">
+        <ul id="sidemenu" >
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()" ></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+        <div class="header-text">
+        <h1><span>Amaan Firoz</span> <br> </h1>
+        <h3>&emsp;&emsp;Data Analyst</h3>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------About------------------------------  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">   
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am Amaan Firoz, a data-driven professional proficient in data analysis, cleaning, and visualization techniques. My experience with Power
+                    BI, SQL, and Python enables me to extract meaningful insights from complex datasets. I'm excited to leverage my skills to
+                    solve real-world business problems and contribute to data-driven initiatives.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                        <p class="tab-links" onclick="opentab('education')">Education</p> 
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <Li><span>Languages</span><br>JAVA / PYTHON / HTML / CSS / JavaScript</Li>
+                            <Li><span>Database Management</span><br>SQL / MySQL </Li>
+                            <Li><span>App Development</span><br>KOTLIN</Li>
+                            <Li><span>Microsoft Office</span><br>POWERPOINT / EXCEL / WORD / OUTLOOK</Li>
+                            <Li><span>Developer Tools</span><br>GIT / VS CODE </Li>
+                            <Li><span>Data Analyst Tool</span><br>POWER BI </Li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <Li><span>KultureHire</span><br>Data Analyst Intern<br><p><br> Utilized Excel to analyse datasets and model Gen Z's career aspirations, improving efficiency by 40%.</p><br><p> Developed visual representations of data to reveal the career aspirations of Gen Z, providing valuable information for
+                                corporate entities leading to a 12% increase in goal-oriented hiring strategies.</p></Li>
+                            <Li><span>Edulyt India</span><br>Data Analyst Intern<br><p><br>Conducted customer behaviour analysis using Python and Excel, resulting in a 15% increase in customer retention. </p><br><p> Designed Power BI dashboards to present performance insights to management, improving decision-making efficiency by
+                                10%.</p></Li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <Li><span>Graduation (2020-2024)</span><br>B.Tech CSE - (Amity University, Noida)</Li>
+                            <Li><span> Intermediate (2018-2020)</span><br>PCM (Vision Valley School)</Li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!------------------------SERVICES-------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-List">
+            <div>
+                <i class="fa-regular fa-crop-simple"></i>
+                <h2>Data Analyst</h2>
+                <p>As a data analyst , I will be responsible for collection of data from diverse sources and then clean and preprocess that data to remove errors ,inconsistencies and missing values in the data.I will be using statistical methods and data visualization tools to identify patterns and trends.Based on the analysis , I will provide recommendations and insights to support strategic decision making.</p>
+                      <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>  
+                <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                <h2>Web Developer</h2>
+                <p>As a web developer , I will be responsible to plan , design and build website from scratch. I will be using various programming languages like HTML , CSS , JS to create dynamic and interactive web applications and to ensure it looks appealing and is easy to navigate.Apart from this , I will be responsible to maintain website to improve its performance and add new features. </p>
+                      <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Developer</h2>
+                <p>As an App Developer , I will be responsible to design user interface and user experience to ensure the application is engaging and user friendly. I will be using koltin as a programming language to write the code to build the application features , functionality and performance . Apart from technological skills , I also have effective communicatin skills to work with designers and clients. </p>
+                      <!-- <a href="#">Learn more</a> -->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- --------------------------Portfolio------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+           <div class="work">
+                 <img src="images/work-1.png">
+                 <div class="layer">
+                    <h3>Gender Diversity Dashboard</h3>
+                    <p>A Power BI dashboard that analyse patterns and trends in diversity and inclusion of a company .  </p>
+                    <a href="https://github.com/Amaanfiroz12/Gender-Diversity-Dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+           </div>
+           <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+                <h3>WhatsApp Clone (Web Application)</h3>
+                <p>A WhatsApp clone that has all the basic features similiar to a messaging application and replicates core features of WhatsApp.  </p>
+                <a href="https://github.com/Amaanfiroz12/WhatsApp-Clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+                 <img src="images/work-3.jpeg">
+                 <div class="layer">
+                    <h3>7 Minute workout App</h3>
+                    <p>The app that can be used to calculate BMI and help you complete your workout in 7 minutes. 
+                    </p>
+                    <a href="https://www.linkedin.com/posts/amaan-firoz_android-development-activity-6952603245458378752-GICE?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+       </div>
+       <a href="https://github.com/Amaanfiroz12" class = btn>See more</a>
+        
+    </div>
+</div>
+<!--------------------------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> amaanfiroz01@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i> 9837975356</p>
+                <div class="social-icons">
+                   <a href="https://www.linkedin.com/in/amaan-firoz/"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://github.com/Amaanfiroz12"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Amaan <i class="fas fa-heart"></i> </p>
+
+    </div>
+</div>
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbye9Rl4IRNSPz3IWtjYehDeSMmTl_ayfaQZxh-PSefDFXM40sbvL3r0_xobWdsKUsbO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
